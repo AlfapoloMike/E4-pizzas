@@ -1,8 +1,9 @@
 const pizzasList = document.querySelector('#main > div.pizzasList')
-const pizzasLocal = localStorage.getItem('Pizzas')
-const strLocalPizzas = JSON.parse(pizzasLocal)
 
 export const showPizzaList = () =>{
+    const pizzasLocal = localStorage.getItem('Pizzas')
+    const strLocalPizzas = JSON.parse(pizzasLocal)
+    
     strLocalPizzas.map(pizza =>{
         const pizzaName = document.createElement('p')
         pizzaName.innerHTML = `
