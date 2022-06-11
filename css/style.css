@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+}
+body{
+	background: linear-gradient(to right, #fc4a1a, #f7b733);
+	background-size: 100% 1rem;
+}
+.banner{
+	background-image: url(/assets/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	height: 12rem;
+}
+#main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	background-color: #f7b733;
+	padding: 2rem 1.5rem 3rem 1.5rem;
+	justify-content: center;
+	margin: auto;
+	margin-top: 2.5rem;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	transform: translateY(-12rem);
+	
+}
+.picture{
+	width: 30rem;
+	border-radius: 10px;
+}
+
+.card{
+	margin: 2rem 2rem 0.5rem 2rem;
+	text-align: center;
+}
+#error{
+	margin: 2rem;
+	text-align: center;
+	font-family: pizza-font ;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color: #fc4a1a;
+}
+input{
+	width: 3rem;
+	border-style: none;
+	padding: 0.5rem;
+	text-align: center;
+	font-family: pizza-font ;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+button{
+	width: 6rem;
+	border-style: none;
+	background-color: #fc4a1a;
+	padding: 0.5rem;
+	font-family: pizza-font ;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+.name{
+	text-decoration: underline;
+}
+.price{
+	font-size: 3rem;
+	font-weight: bolder;
+	padding: 1rem 1rem 0.5rem 1rem;
+}
+.cardContainer{
+	font-family: pizza-font ;
+	font-size: 2rem;
+}
+.pizzasList{
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.span{
+	font-weight: lighter;
+}
+@font-face {
+	font-family: pizza-font, Courier, monospace;
+	src: url('/assets/font/Calvino-Extrabold-trial.ttf');
+
+}
