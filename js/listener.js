@@ -2,10 +2,10 @@
 import { showError } from "./error.js"
 import { showPizzas } from "./showPizzas.js"
 
-const pizzasLocal = localStorage.getItem('Pizzas')
-const strLocalPizzas = JSON.parse(pizzasLocal)
 
 export const addBtnListener = () => {
+    const pizzasLocal = localStorage.getItem('Pizzas')
+    const strLocalPizzas = JSON.parse(pizzasLocal)
     const btn = document.querySelector('#main > form > button')
     const input = document.querySelector('#main > form > input[type=number]')
     input.setAttribute('max', 6)
