@@ -8,7 +8,7 @@ const strLocalPizzas = JSON.parse(pizzasLocal)
 export const addBtnListener = () => {
     const btn = document.querySelector('#main > form > button')
     const input = document.querySelector('#main > form > input[type=number]')
-    input.setAttribute('max', strLocalPizzas.length)
+    input.setAttribute('max', 6)
     btn.addEventListener('click', (e) => {
         e.preventDefault()
         if(input.value > 0 && input.value <= strLocalPizzas.length){
