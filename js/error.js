@@ -6,7 +6,7 @@ export const showError =()=>{
     imgError.setAttribute('id', 'error')
     imgError.innerHTML = `
     <img class="picture" src="/assets/error.jpg" alt="">
-    <p>Numero de pizza invalido</p>
+    <p>Numero invalido</p>
     <p>Elige uno de la lista</p>
     `
     body.appendChild(imgError)
