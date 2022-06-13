@@ -86,15 +86,12 @@ button:hover{
 .pizzasList p{
 	padding: 0.2rem;	
 }
-.pizzasList span{
-	text-decoration: underline 0.1rem;
-}
+
 .pizzasList{
 	width: auto;
 	height: 20rem;
 	margin-top: 0.5rem;
 	padding: 1rem;
-	font-size: 1.3rem;
 	font-weight: bolder;
 	color: white;
 	background-image: url(/assets/pizarra.png);
@@ -130,6 +127,9 @@ button:hover{
 	.pizzasList p{
 		transform: translateY(2rem);
 	}
+	.pizzasList{
+		font-size: 1.1rem;
+	}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1399px)  {
@@ -150,6 +150,9 @@ button:hover{
 
 	.pizzasList p{
 		transform: translateY(2rem);
+	}
+	.pizzasList{
+		font-size: 1.3rem;
 	}
    
     }
@@ -172,6 +175,9 @@ button:hover{
 
 	.pizzasList p{
 		transform: translateY(2rem);
+	}
+	.pizzasList{
+		font-size: 1.3rem;
 	}
 
 }
