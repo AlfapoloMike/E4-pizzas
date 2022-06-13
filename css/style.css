@@ -34,7 +34,7 @@ body{
 	border-bottom: 3px inset #000000;
 	border-radius: 10px 10px 10px 10px;
 	transform: scale(1.2);
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .card{
@@ -64,18 +64,14 @@ input{
 button{
 	width: 6rem;
 	border-style: none;
-	background-color: #fc1a1a;
+	background-color: #c50000c4;
 	padding: 0.5rem;
 	font-family: pizza-font ;
 	font-size: 1rem;
 	font-weight: bolder;
 }
 button:hover{
-	animation-name: buttonIncrease;
-	animation-timing-function: 2s;
-	animation-iteration-count: 1;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+	background-color: #fc1a1a;
 }
 .name{
 	text-decoration: underline;
@@ -119,7 +115,3 @@ button:hover{
 	src: url('/assets/font/Calvino-Extrabold-trial.ttf');
 
 }
-@keyframes buttonIncrease {
-	from {transform: scale(1.0);}
-	to {transform: scale(1.1);}
-  }
