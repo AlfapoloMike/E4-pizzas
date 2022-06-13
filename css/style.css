@@ -86,9 +86,9 @@ button:hover{
 	padding: 1rem;
 	font-size: 1.5rem;
 	font-weight: bolder;
-	background-image: url(/assets/pizarra.png);
+	/* background-image: url(/assets/pizarra.png);
 	filter:brightness(1.1);
-	background-blend-mode: multiply;
+	background-blend-mode: multiply; */
 }
 .span{
 	font-weight: lighter;
