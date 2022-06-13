@@ -1,6 +1,7 @@
 import { cleanHTML } from "./cleaner.js"
+
+export const showError = () => {
     const body = document.querySelector('#main > div.cardContainer')
-export const showError =()=>{
     cleanHTML()
     const imgError = document.createElement('div')
     imgError.setAttribute('id', 'error')

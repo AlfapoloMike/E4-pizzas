@@ -6,8 +6,10 @@
 	outline: none;
 }
 body{
-	background: linear-gradient(to right, #fc4a1a, #f7b733);
-	background-size: 100% 1rem;
+	background-image: linear-gradient(to right, #fc4a1a, #f7b733),url(/assets/12023.jpg);
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .banner{
 	background-image: url(/assets/banner.jpg);
@@ -16,38 +18,43 @@ body{
 	width: 100%;
 	background-repeat: no-repeat;
 	height: 12rem;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 #main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: fit-content;
-	background-color: #f7b733;
-	padding: 2rem 1.5rem 3rem 1.5rem;
+	background-image: linear-gradient(to top, #fc4a1a, #f7b733),url(/assets/12023.jpg);
+	padding: 1rem 1.5rem 1rem 1.5rem;
 	justify-content: center;
 	margin: auto;
 	margin-top: 2.5rem;
 	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 	transform: translateY(-12rem);
 	
 }
 .picture{
-	width: 30rem;
-	border-radius: 10px;
+	width: 25rem;
+	border-bottom: 3px inset #000000;
+	border-radius: 10px 10px 10px 10px;
 }
 
 .card{
 	margin: 2rem 2rem 0.5rem 2rem;
 	text-align: center;
+	color: white;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
 }
 #error{
 	margin: 2rem;
 	text-align: center;
 	font-family: pizza-font ;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: bolder;
 	color: #fc1a1a;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
 }
 input{
 	width: 3rem;
@@ -68,7 +75,11 @@ button{
 	font-weight: bolder;
 }
 button:hover{
-	
+	animation-name: buttonIncrease;
+	animation-timing-function: 2s;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 .name{
 	text-decoration: underline;
@@ -82,13 +93,27 @@ button:hover{
 	font-family: pizza-font ;
 	font-size: 2rem;
 }
+.pizzasList p{
+	transform: translateY(2rem);
+}
+.pizzasList p{
+	padding: 0.2rem;	
+}
+.pizzasList span{
+	text-decoration: underline 0.1rem;
+}
 .pizzasList{
+	width: auto;
+	height: 20rem;
+	margin-top: 0.5rem;
 	padding: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: bolder;
-	/* background-image: url(/assets/pizarra.png);
-	filter:brightness(1.1);
-	background-blend-mode: multiply; */
+	color: white;
+	background-image: url(/assets/pizarra.png);
+	background-size: 25rem;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .span{
 	font-weight: lighter;
@@ -98,3 +123,7 @@ button:hover{
 	src: url('/assets/font/Calvino-Extrabold-trial.ttf');
 
 }
+@keyframes buttonIncrease {
+	from {transform: scale(1.0);}
+	to {transform: scale(1.1);}
+  }

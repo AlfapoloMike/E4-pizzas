@@ -11,15 +11,15 @@ export const addBtnListener = () => {
     input.setAttribute('max', 6)
     btn.addEventListener('click', (e) => {
         e.preventDefault()
-        if(input.value > 0 && input.value <= strLocalPizzas.length){
-            strLocalPizzas.map(localPizza =>{
-                if(input.value == localPizza.id){
-                    
-                    showPizzas(localPizza.foto,localPizza.nombre,localPizza.ingredientes,localPizza.precio)
+        if (input.value > 0 && input.value <= strLocalPizzas.length) {
+            strLocalPizzas.map(localPizza => {
+                if (input.value == localPizza.id) {
+
+                    showPizzas(localPizza.foto, localPizza.nombre, localPizza.ingredientes, localPizza.precio)
                 }
             })
-        }else{
-            
+        } else {
+
             showError()
         }
     })
