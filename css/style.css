@@ -12,6 +12,7 @@ body{
 	background-size:cover;
 }
 #main{
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,16 +22,9 @@ body{
 	margin: auto;
 	margin-top: 2.5rem;
 	border-radius: 15px;
-	border-style: solid;
-	border-width: 0.5rem;
-	border-color: #fc4a1a;
 	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-
 	
-}
-.picture{
-	border-bottom: 3px inset #000000;
-	border-radius: 10px 10px 10px 10px;
+	
 }
 
 .card{
@@ -38,8 +32,25 @@ body{
 	color: white;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
 }
+.picture{
+	border-bottom: 3px inset #000000;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+.name{
+	text-decoration: underline;
+}
+.price{
+	font-size: 3rem;
+	font-weight: bolder;
+	padding: 1rem 1rem 0.5rem 1rem;
+}
+.cardContainer{
+	font-family: pizza-font ;
+	font-size: 2rem;
+	transform: translateY(-0.2rem);
+}
 #error{
-	margin: 2rem;
 	text-align: center;
 	font-family: pizza-font ;
 	font-size: 2rem;
@@ -67,18 +78,6 @@ button{
 }
 button:hover{
 	background-color: #fc1a1a;
-}
-.name{
-	text-decoration: underline;
-}
-.price{
-	font-size: 3rem;
-	font-weight: bolder;
-	padding: 1rem 1rem 0.5rem 1rem;
-}
-.cardContainer{
-	font-family: pizza-font ;
-	font-size: 2rem;
 }
 .pizzasList p{
 	transform: translateY(2rem);
@@ -109,13 +108,11 @@ button:hover{
 }
 @media only screen and (max-width:699px){
 	#main{
-		padding: 1rem 1.5rem 1rem 1.5rem;
-		transform: translate(0rem,-1.5rem);
 		transform: scale(0.9);
 		
 	}
 	.picture{
-		height: 12rem;
+		height: 15rem;
 		transform: scale(1.1);
 		margin-bottom: 1.5rem;
 	}
@@ -129,14 +126,40 @@ button:hover{
 	}
 	.pizzasList{
 		font-size: 1.1rem;
+		background-size: 23rem;
+	}
+	.card{
+		font-size: 1.4rem;
 	}
 }
-
-@media only screen and (min-width: 700px) and (max-width: 1399px)  {
+@media only screen and (min-width: 700px) and (max-width: 1099px)  {
 	#main{
-		padding: 1rem 1.5rem 1rem 1.5rem;
-		transform: translate(0rem,-1.5rem);
-		
+		transform: translate(10vw);
+		margin-bottom: 10rem;
+	}
+	.picture{
+		height: 18rem;
+		transform: scale(1.2);
+		margin-bottom: 1.5rem;
+	}
+	
+	.card{
+		margin: 2rem 2rem 0.5rem 2rem;
+	}
+
+	.pizzasList p{
+		transform: translateY(2rem);
+	}
+	.pizzasList{
+		font-size: 1.3rem;
+	}
+   
+    }
+
+@media only screen and (min-width: 1100px) and (max-width: 1399px)  {
+	#main{
+		transform: translate(23vw);
+		margin-bottom: 10rem;
 	}
 	.picture{
 		height: 18rem;
@@ -159,9 +182,8 @@ button:hover{
 @media only screen and (min-width:1400px){
 
 	#main{
-		padding: 1rem 1.5rem 1rem 1.5rem;
-		transform: translate(26rem,-1.5rem);
-		
+		transform: translate(30vw);
+		margin-bottom: 10rem;
 	}
 	.picture{
 		height: 18rem;
